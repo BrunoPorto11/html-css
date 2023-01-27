@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador </p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="media">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Reproduzindo audio em HTML5 - de forma simples</p>
+    <audio src="sons/C A L E B ft Gabby callwood - 12am (tradução)(MP3_160K).mp3" controls ></audio>
+
+    <p><strong>Reproduzindo audio com source</strong></p>
+    <audio preload="metadata" controls>
+        <source src="sons/C A L E B ft Gabby callwood - 12am (tradução)(MP3_160K).mp3" type="audio/mpeg">
+    </audio>
+
+<p>Para baixar esse audio <a href="sons/C A L E B ft Gabby callwood - 12am (tradução)(MP3_160K).mp3" download="">clique aqui</a></p>
+    
+    <h2>Reproduzindo Videos</h2>
+    <p>Este video esta hospedado no meu propio servidor</p>
+    <p><strong>Inserindo de forma simples:</strong></p>
+    <video src="videos/Sacrifício (Clipe Oficial) - AC Music _ Antônio Guatura e Larissa Gabrielle(360P).mp4" width="500" controls
+    ></video>
+    <p>Inserindo Videos com source</p>
+    <video controls>
+<source src="videos/Sacrifício (Clipe Oficial) - AC Music _ Antônio Guatura e Larissa Gabrielle(360P).mp4" type="video/mp4" >
+    </video>
+
+    <h2>Incorporação de videos externos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IUKUuF6YbGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>
